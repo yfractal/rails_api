@@ -1,35 +1,10 @@
 # Be sure to restart your server when you modify this file.
 Dldb::PumaPatch.patch
 
-
-
-
-
-@puller = Puller.new
-
 Thread.new do
-  sleep 10
-  @puller.update_threads
-  @puller.threads.each do |thread|
-    puts "thread id=#{thread.object_id}"
-  end
-
-  @puller.busy_pull
+  sleep 3
+  Dldb.busy_pull
 end
-
-Thread.new do
-  sleep 10
-  while true
-      puts "check threads"
-      puts @puller.update_threads
-     @puller.update_methods_table(3)
-  end
-end
-
-
-
-
-
 
 # Avoid CORS issues when API is called from the frontend app.
 # Handle Cross-Origin Resource Sharing (CORS) in order to accept cross-origin Ajax requests.

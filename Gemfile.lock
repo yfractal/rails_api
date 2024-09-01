@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:yfractal/dldb.git
-  revision: e5ebcebf3681af06e53ef3e7592b79c1329ea81e
-  ref: e5ebceb
+  revision: 3cba7ca36a2c5a0d8bc46a41276b15f9a89da5ee
+  ref: 3cba7ca
   specs:
     dldb (0.1.0)
 
@@ -225,6 +225,8 @@ GEM
       rubocop-minitest
       rubocop-performance
       rubocop-rails
+    ruby-graphviz (1.2.5)
+      rexml
     ruby-progressbar (1.13.0)
     securerandom (0.3.1)
     sqlite3 (2.0.4-aarch64-linux-gnu)
@@ -275,6 +277,7 @@ DEPENDENCIES
   puma (>= 5.0)
   rails (~> 7.2.0)
   rubocop-rails-omakase
+  ruby-graphviz
   sqlite3 (>= 1.4)
   tzinfo-data
 
