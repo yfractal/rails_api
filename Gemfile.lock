@@ -1,9 +1,9 @@
 GIT
-  remote: git@github.com:yfractal/dldb.git
-  revision: 3cba7ca36a2c5a0d8bc46a41276b15f9a89da5ee
-  ref: 3cba7ca
+  remote: git@github.com:yfractal/sdb.git
+  revision: 29996e69344ab1ee2b4daf32953b98d904bda4df
+  ref: 29996e69344ab1ee2b4daf32953b98d904bda4df
   specs:
-    dldb (0.1.0)
+    sdb (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -273,11 +273,11 @@ DEPENDENCIES
   brakeman
   byebug
   debug
-  dldb!
   puma (>= 5.0)
   rails (~> 7.2.0)
   rubocop-rails-omakase
   ruby-graphviz
+  sdb!
   sqlite3 (>= 1.4)
   tzinfo-data
 

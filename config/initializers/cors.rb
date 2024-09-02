@@ -1,9 +1,9 @@
 # Be sure to restart your server when you modify this file.
-Dldb::PumaPatch.patch
+Sdb::PumaPatch.patch
 
 Thread.new do
   sleep 3
-  Dldb.busy_pull
+  Sdb.busy_pull
 end
 
 # Avoid CORS issues when API is called from the frontend app.
