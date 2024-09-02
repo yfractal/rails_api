@@ -8,7 +8,7 @@ gem "sqlite3", ">= 1.4"
 gem "puma", ">= 5.0"
 gem 'byebug'
 
-gem 'sdb', :git => 'git@github.com:yfractal/sdb.git', :ref => '29996e69344ab1ee2b4daf32953b98d904bda4df'
+gem 'sdb', :git => 'git@github.com:yfractal/sdb.git', :ref => '0f6fb7f'
 
 gem 'ruby-graphviz'
 

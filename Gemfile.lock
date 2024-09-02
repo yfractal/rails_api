@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:yfractal/sdb.git
-  revision: 29996e69344ab1ee2b4daf32953b98d904bda4df
-  ref: 29996e69344ab1ee2b4daf32953b98d904bda4df
+  revision: 0f6fb7f2d9e93de7c5b37984f348e927204c8d0f
+  ref: 0f6fb7f
   specs:
     sdb (0.1.0)
 
