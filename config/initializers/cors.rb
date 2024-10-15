@@ -3,7 +3,8 @@ Sdb::PumaPatch.patch
 
 Thread.new do
   sleep 3
-  Sdb.busy_pull
+  threads = Thread.list.filter { |thread| thread.name&.include?("puma srv tp") }
+  Sdb.busy_pull(threads)
 end
 
 # Avoid CORS issues when API is called from the frontend app.

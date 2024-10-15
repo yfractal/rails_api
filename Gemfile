@@ -6,11 +6,12 @@ gem "rails", "~> 7.2.0"
 gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
-gem 'byebug'
+gem "byebug"
 
-gem 'sdb', :git => 'git@github.com:yfractal/sdb.git', :ref => '0f6fb7f'
+gem "sdb", path: "../../sdb"
+gem "stack_frames"
 
-gem 'ruby-graphviz'
+gem "ruby-graphviz"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -45,5 +46,3 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
-
-
