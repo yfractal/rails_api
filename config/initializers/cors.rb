@@ -1,10 +1,11 @@
 # Be sure to restart your server when you modify this file.
-Sdb::PumaPatch.patch
+Sdb::PumaPatch.patch(Rails.logger)
 
 Thread.new do
   sleep 3
   threads = Thread.list.filter { |thread| thread.name&.include?("puma srv tp") }
-  Sdb.busy_pull(threads)
+
+  Sdb.pull(threads, 0.001)
 end
 
 # Avoid CORS issues when API is called from the frontend app.

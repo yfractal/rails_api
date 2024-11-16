@@ -9,9 +9,13 @@ gem "puma", ">= 5.0"
 gem "byebug"
 
 gem "sdb", path: "../../sdb"
-gem "stack_frames"
+gem 'cpu_time', :git => 'git@github.com:yfractal/cpu_time.git'
 
-gem "ruby-graphviz"
+# gem "stack_frames"
+
+# gem "ruby-graphviz"
+
+# gem "vernier", "~> 1.0"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
