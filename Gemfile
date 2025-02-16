@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 7.2.2.1"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
@@ -9,7 +9,7 @@ gem "puma", ">= 5.0"
 gem "byebug"
 
 gem "sdb", path: "../../sdb"
-gem 'cpu_time', :git => 'git@github.com:yfractal/cpu_time.git'
+gem 'cpu_time'
 
 # gem "stack_frames"
 
@@ -29,7 +29,7 @@ gem 'cpu_time', :git => 'git@github.com:yfractal/cpu_time.git'
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "tzinfo-data"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
